@@ -1,5 +1,101 @@
 package main;
 
+import java.util.Scanner;
+
 public class main {
 
+	/* Scrivere un programma che dati dei secondi li converta in ore, minuti,
+secondi e mostri a video la stringa generata (secondi → “hh:mm:ss”) */
+	
+	// 1 h è 3600s
+	// 1 min è 60 s
+	
+	public static void main(String[] args) {
+		int fattore_ore = 3600;
+		int fattore_minuti = 60;
+		int ore = 0;
+		int minuti = 0;
+		int sec = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("inserisci un numero di secondi");
+		
+		int secondi = scan.nextInt();
+		
+		for(int i= 0; i<secondi; i ++) {
+			
+			sec ++;
+			if(sec == 60) {
+				minuti ++;
+				sec = 0;
+				
+			} if(minuti == 60) {
+				ore ++;
+				minuti = 0;
+			}
+			 
+		}
+		
+		System.out.println(ore + ":" + minuti + ":" +  sec);
+	
+	
+	/*Dato un numero sotto forma di stringa, convertirlo in intero senza utilizzare
+  funzioni già pronte.Possibile usare solo :
+	 - cicli
+	 - chartAt
+	 - if / switch
+ Es. “25” come stringa deve essere convertito in intero 25. */
+	
+	System.out.println("inserisci un numero intero");
+	String numero = scan.next();
+	int car = 0;
+	int risultato = 0;
+	
+	for(int i = 0; i< numero.length(); i++) {
+		
+		char carattere = numero.charAt(i);
+		switch(carattere) {
+		case '0':
+			risultato = risultato * 10 + 0;
+			break;
+		case '1':
+			risultato = risultato * 10 + 1;
+			break;
+		case '2':
+			risultato = risultato * 10 + 2;
+			break;
+		case '3':
+			risultato = risultato * 10 + 3;
+			break;
+		case '4':
+			risultato = risultato * 10 + 4;
+			break;
+		case '5':
+			risultato = risultato * 10 + 5;
+			break;
+		case '6':
+			risultato = risultato * 10 + 6;
+			break;
+		case '7': 
+			risultato = risultato * 10 + 7;
+			break;
+		case '8':
+			risultato = risultato * 10 + 8;
+			break;
+		case '9':
+			risultato = risultato * 10 + 9;
+			break;
+			
+		
+		}
+		
+		
+		
+	}
+	System.out.println(risultato);
+	
+	
+	}
+	
+	
 }
