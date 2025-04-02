@@ -94,6 +94,139 @@ secondi e mostri a video la stringa generata (secondi → “hh:mm:ss”) */
 	}
 	System.out.println(risultato);
 	
+	/*Data una stringa in input mostrare a video quanti caratteri alfabetici
+ contiene, quanti numeri e quanti simboli non alfanumerici. Continuare a
+ chiedere una nuova stringa finchè non si inserisce 0. */
+	int cont1 = 0;
+	int cont2 = 0;
+	int cont3 = 0;
+	String str1 = "";
+	boolean bool = true;
+	while(bool) {
+		System.out.println("inserisci una stringa");
+		 str1 = scan.next();
+		 if(str1.equals("0")) {
+			 bool = false;
+			 break;
+		 }
+		 
+		 for(int i = 0; i < str1.length(); i++) {
+			 switch(str1.charAt(i)) {
+			 case 'a': 
+				 cont1 ++;
+				 
+				 break;
+			 case 'b':
+				 cont1 ++;
+				 break;
+			 case 'c':
+				 cont1 ++;
+			     break;
+			 case 'd':
+				 cont1 ++;
+				 break;
+			 case 'e':
+				 cont1 ++;
+				 break;
+			 case 'f':
+				 cont1 ++;
+				 break;
+			 case 'g':
+				 cont1 ++;
+				 break;
+			 case 'h':
+				 cont1 ++;
+				 break;
+			 case 'i':
+				 cont1 ++;
+				 break;
+			 case 'l':
+				 cont1 ++;
+				 break;
+			 case 'm':
+				 cont1 ++;
+				 break;
+			 case 'n':
+				 cont1 ++;
+				 break;
+			 case 'o':
+				 cont1 ++;
+				 break;
+			 case 'p':
+				 cont1 ++;
+				 break;
+			 case 'q':
+				 cont1 ++;
+				 break;
+			 case 'r':
+				 cont1 ++;
+				 break;
+			 case 's':
+				 cont1 ++;
+				 break;
+			 case 't':
+				 cont1 ++;
+				 break;
+			 case 'u':
+				 cont1 ++;
+				 break;
+			 case 'v':
+				 cont1 ++;
+				 break;
+			 case 'w':
+				 cont1 ++;
+				 break;
+			 case 'x':
+				 cont1 ++;
+				 break;
+			 case 'y':
+				 cont1 ++;
+				 break;
+			 case 'z':
+				 cont1 ++;
+				 break;
+			 case '0':
+				 cont2 ++;
+				 break;
+			 case '1':
+				 cont2 ++;
+				 break;
+			 case '2':
+				 cont2 ++;
+				 break;
+			 case '3':
+				 cont2 ++;
+				 break;
+			 case '4':
+				 cont2 ++;
+				 break;
+			 case '5':
+				 cont2 ++;
+				 break;
+			 case '6':
+				 cont2 ++;
+				 break;
+			 case '7':
+				 cont2 ++;
+				 break;
+			 case '8':
+				 cont2 ++;
+				 break;
+			 case '9':
+				 cont2 ++;
+				 break;
+			default:
+				cont3 ++;
+				break;
+				 
+				 
+				 
+				 
+			 }
+			 
+		 }
+		 System.out.println("lettere " + cont1+ "," + " numeri " + cont2 + "," + "simboli " + cont3 );
+	}
 	
 	}
 	
