@@ -228,6 +228,21 @@ secondi e mostri a video la stringa generata (secondi → “hh:mm:ss”) */
 		 System.out.println("lettere " + cont1+ "," + " numeri " + cont2 + "," + "simboli " + cont3 );
 	}
 	
+	/* Data in input una stringa verificare se è palindroma */
+	
+	System.out.println("inserisci una stinga");
+	String str2 = scan.next();
+	
+	String str2 = str.substring(7);
+	
+	//prendo metà della parola
+	//"giro" una metà ciclando
+	//confronto le due metà
+	
+	
+	
+			scan.close();
+	
 	}
 	
 	
