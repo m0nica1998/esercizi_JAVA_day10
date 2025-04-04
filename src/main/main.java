@@ -18,7 +18,7 @@ secondi e mostri a video la stringa generata (secondi → “hh:mm:ss”) */
 		int sec = 0;
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("inserisci un numero di secondi");
+	System.out.println("inserisci un numero di secondi");
 		
 		int secondi = scan.nextInt();
 		
@@ -226,18 +226,38 @@ secondi e mostri a video la stringa generata (secondi → “hh:mm:ss”) */
 			 
 		 }
 		 System.out.println("lettere " + cont1+ "," + " numeri " + cont2 + "," + "simboli " + cont3 );
-	}
+	} 
 	
 	/* Data in input una stringa verificare se è palindroma */
 	
 	System.out.println("inserisci una stinga");
 	String str2 = scan.next();
+	if(str2.length() % 2 == 0) {
+		//prendo metà della parola
+		String str3 = str2.substring((str2.length()/2));
+		String str4 = str2.substring(0, (str2.length()/2));
+		
+		String stringa_rovesciata = "";
+		
+		//"giro" una metà ciclando
+		for(int i=str4.length() ; i>0; i--) {
+		stringa_rovesciata = stringa_rovesciata + String.valueOf(str4.charAt(i-1)) ;
+		
+		
+		
+		}
+		//confronto le due metà
+		if(stringa_rovesciata.equals(str3)) {
+			System.out.println("la stringa di partenza è palindroma");
+		} else {
+			System.out.println("la stringa di partenza non è paindroma");
+		}
+	} else {
+		System.out.println("la stringa di partenza non è paindroma");
+	}
 	
-	String str2 = str.substring(7);
 	
-	//prendo metà della parola
-	//"giro" una metà ciclando
-	//confronto le due metà
+	
 	
 	
 	
